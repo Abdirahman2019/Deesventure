@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agent Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <form id="registrationForm" action="student_details.html" method="POST">
+            <h2>Agent Registration Form</h2>
+            <label for="agentName">Agent Name:</label>
+            <input type="text" id="agentName" name="agentName" required>
+            
+            <label for="agentEmail">Email:</label>
+            <input type="email" id="agentEmail" name="agentEmail" required>
+            
+            <label for="agencyName">Agency Name:</label>
+            <input type="text" id="agencyName" name="agencyName">
+            
+            <div class="button-container">
+                <button type="submit">Submit</button>
+                <button type="button" onclick="saveForLater()">Resume Later</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function saveForLater() {
+            // Implement functionality to save form data for later
+            alert("Form saved for later. You can resume anytime.");
+        }
+    </script>
+</body>
+</html>
